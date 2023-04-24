@@ -33,7 +33,10 @@ import java.lang.ArithmeticException;
                   double montoFijo = 3500;
                   double x = ((z.MontoTotal() * 50)/100);
             
-           try{
+            //montoFijo es el máximo para el descuento
+            //ceroYnegativo representa precio cero y monto negativo
+          
+              try{
                if(z.MontoTotal() <= montoFijo) {
                   System.out.println("Total con descuento del 50% es: $"+x);
               }else if
@@ -44,6 +47,6 @@ import java.lang.ArithmeticException;
                }catch (ArithmeticException c) {    
                   System.out.println("error");
                    }
-   System.out.print("\nGracias vuelva pronto");
+           System.out.print("\nGracias vuelva pronto");
         }
    }
